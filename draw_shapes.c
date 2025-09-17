@@ -26,3 +26,17 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+/* Prints an arrow of specified height whose left edge is at leftCol */
+void print_arrow(int leftCol, int size){
+  for(int row = 0; row <= size; row++){
+    if(row == 0 || row == 6)
+      printf("   *");
+    else if(row == 1 || row == 5)
+      printf("  *");
+    else if(row == 2 || row == 4)
+      printf(" *");
+    else if(row == 3)
+      printf("* * * * *");
+    printf("\n");
+  }
+}
